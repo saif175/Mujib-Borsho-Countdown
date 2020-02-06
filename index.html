@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>মুজিব বর্ষ</title>
+    <link rel="stylesheet" href="assets/css/counter.css"/>
+</head>
+<body>
+
+
+
+<div class="mb100_wrapper">
+        <div class="image">
+            <img src="assets/img/resize.jpg" alt="" height="auto">
+        </div>
+        <div class="timer">
+            <div class="mb100_timer_wrapper">
+                <div class="days"></div>
+                <div class="hours"></div>
+                <div class="minutes"></div>
+                <div class="seconds"></div>
+            </div>
+            <div class="mb100_timer">
+                <p class="">দিন</p>
+                <p class="">ঘন্টা</p>
+                <p class="">মিনিট</p>
+                <p class="">সেকেন্ড</p>
+            </div>
+        </div>
+</div>
+
+
+<script src="assets/js/jquery-min.js"></script>
+<script src="assets/js/jquery.Timer.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.mb100_timer_wrapper').Timer({ direction: 'down', date: 'March 17, 2020 ', callback: function() { alert('times up!'); } });
+    });
+</script>
+
+</body>
+</html>
